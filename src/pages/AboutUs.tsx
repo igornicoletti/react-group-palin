@@ -2,7 +2,7 @@ import { aboutData } from '../datas'
 
 export const AboutUs = () => {
   return (
-    <section className="relative overflow-hidden py-24 sm:py-32 sm:pt-48 mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="relative overflow-hidden py-24 sm:py-32 mx-auto max-w-7xl px-6 lg:px-8">
       <div className="max-w-4xl">
         <p className="font-semibold text-dracula-main">{aboutData.section}</p>
         <h1 className="mt-2 text-4xl/tight font-semibold tracking-tight text-pretty text-dracula-dark sm:text-5xl">{aboutData.title}</h1>

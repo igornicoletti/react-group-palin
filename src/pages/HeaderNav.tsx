@@ -1,6 +1,6 @@
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { List, X } from '@phosphor-icons/react'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 const navigation = [
   { name: 'Empresa', href: '#' },
@@ -9,22 +9,9 @@ const navigation = [
 
 export const HeaderNav = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [isHeaderVisible, setIsHeaderVisible] = useState(true)
-
-  useEffect(() => {
-    let lastScrollY = 0
-    const handleScroll = () => {
-      setIsHeaderVisible(window.scrollY <= lastScrollY || window.scrollY <= 100)
-      lastScrollY = window.scrollY
-    }
-
-    window.addEventListener('scroll', handleScroll)
-
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
 
   return (
-    <header className={`z-10 fixed top-0 left-0 w-full transition-transform duration-300 ${!isHeaderVisible ? '-translate-y-full' : 'translate-y-0'}`}>
+    <header className={'relative'}>
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex items-center gap-x-16">
           <a href="#" className="-m-1.5 p-1.5">
