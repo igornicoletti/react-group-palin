@@ -12,9 +12,9 @@ export const ContactUs = () => {
           ))}
         </div>
       </div>
-      <div className="mt-16 flex justify-center space-x-4">
-        <a className="px-6 h-12 flex items-center border border-dracula-main bg-dracula-main text-white rounded-full" href={contactData.emailLink} target="_blank">{contactData.buttons.emailText}</a>
-        <a className="px-6 h-12 flex items-center border border-dracula-main text-dracula-main rounded-full" href={contactData.whatsappLink} target="_blank">{contactData.buttons.whatsappText}</a>
+      <div className="max-w-md mx-auto mt-16 grid sm:grid-cols-2 gap-2 sm:gap-4">
+        <a className="px-6 py-2 text-center border-2 border-dracula-main bg-dracula-main text-white rounded-lg" href={contactData.emailLink} target="_blank">{contactData.buttons.emailText}</a>
+        <a className="px-6 py-2 text-center border-2 border-dracula-main text-dracula-main rounded-lg" href={contactData.whatsappLink} target="_blank">{contactData.buttons.whatsappText}</a>
       </div>
     </section>
   )
