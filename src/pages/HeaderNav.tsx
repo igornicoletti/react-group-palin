@@ -63,7 +63,10 @@ export const HeaderNav = () => {
                   </a>
                 ))}
               </div>
-              <div className="py-6">
+              <div className="flex flex-col gap-x-6  py-6">
+                <a href="#" className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-dracula-dark hover:bg-dracula-dark/5">
+                  Trabalhe conosco
+                </a>
                 <a href="#" className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-dracula-dark hover:bg-dracula-dark/5">
                   Entre em contato
                 </a>

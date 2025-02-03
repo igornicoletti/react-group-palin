@@ -1,5 +1,6 @@
 export { AboutUs } from './AboutUs'
 export { ContactUs } from './ContactUs'
+export { Footer } from './Footer'
 export { HeaderNav } from './HeaderNav'
 export { OurCulture } from './OurCulture'
 export { OurPartners } from './OurPartners'
