@@ -1,0 +1,5 @@
+export { AboutUs } from './AboutUs'
+export { ContactUs } from './ContactUs'
+export { HeaderNav } from './HeaderNav'
+export { OurCulture } from './OurCulture'
+export { OurPartners } from './OurPartners'
