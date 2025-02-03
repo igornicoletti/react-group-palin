@@ -2,7 +2,7 @@ import { contactData } from '../datas'
 
 export const ContactUs = () => {
   return (
-    <section className="overflow-hidden py-24 sm:py-32 mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="relative overflow-hidden py-24 sm:py-32 mx-auto max-w-7xl px-6 lg:px-8">
       <div className="max-w-4xl text-center mx-auto">
         <p className="font-semibold text-dracula-main">{contactData.section}</p>
         <h1 className="mt-2 text-4xl font-semibold tracking-tight text-dracula-dark">{contactData.title}</h1>
@@ -13,8 +13,8 @@ export const ContactUs = () => {
         </div>
       </div>
       <div className="max-w-md mx-auto mt-16 grid sm:grid-cols-2 gap-2 sm:gap-4">
-        <a className="px-6 py-2 text-center border-2 border-dracula-main bg-dracula-main text-white rounded-lg" href={contactData.emailLink} target="_blank">{contactData.buttons.emailText}</a>
-        <a className="px-6 py-2 text-center border-2 border-dracula-main text-dracula-main rounded-lg" href={contactData.whatsappLink} target="_blank">{contactData.buttons.whatsappText}</a>
+        <a className="px-6 py-2 font-medium text-center border-2 border-dracula-main text-dracula-main bg-dracula-white rounded-lg" href={contactData.emailLink} target="_blank">{contactData.buttons.emailText}</a>
+        <a className="px-6 py-2 font-medium text-center border-2 border-dracula-main text-dracula-white bg-dracula-main rounded-lg" href={contactData.whatsappLink} target="_blank">{contactData.buttons.whatsappText}</a>
       </div>
     </section>
   )

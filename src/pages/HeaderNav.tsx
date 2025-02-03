@@ -24,7 +24,7 @@ export const HeaderNav = () => {
   }, [])
 
   return (
-    <header className={`z-10 bg-dracula-white fixed top-0 left-0 shadow-md shadow-dracula-main/5 w-full transition-transform duration-300 ${!isHeaderVisible ? '-translate-y-full' : 'translate-y-0'}`}>
+    <header className={`z-10 fixed top-0 left-0 w-full transition-transform duration-300 ${!isHeaderVisible ? '-translate-y-full' : 'translate-y-0'}`}>
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex items-center gap-x-16">
           <a href="#" className="-m-1.5 p-1.5">
@@ -45,11 +45,11 @@ export const HeaderNav = () => {
             <List aria-hidden="true" className="size-6 text-dracula-main" weight="duotone" />
           </button>
         </div>
-        <div className="hidden lg:flex items-center gap-x-16 -mb-1">
-          <a href="#" className="text-sm/6 font-semibold text-dracula-main">
+        <div className="hidden lg:flex items-center gap-x-4 -mb-1">
+          <a href="#" className="px-4 py-1.5 text-sm/6 font-semibold border border-dracula-main text-dracula-main rounded-lg">
             Trabalhe conosco
           </a>
-          <a href="#" className="px-4 py-1.5 text-sm/6 font-semibold border border-dracula-main text-dracula-main rounded-lg">
+          <a href="#" className="px-4 py-1.5 text-sm/6 font-semibold border border-dracula-main text-dracula-white bg-dracula-main rounded-lg">
             Entre em contato
           </a>
         </div>

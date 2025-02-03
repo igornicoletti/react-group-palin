@@ -1,4 +1,4 @@
-import { AboutUs, ContactUs, Footer, HeaderNav, OurCulture, OurPartners } from './pages'
+import { AboutUs, ContactUs, Footer, HeaderNav, OurCareers, OurCulture, OurPartners } from './pages'
 
 export const App = () => {
   return (
@@ -7,6 +7,7 @@ export const App = () => {
       <AboutUs />
       <OurPartners />
       <OurCulture />
+      <OurCareers />
       <ContactUs />
       <Footer />
     </div>
