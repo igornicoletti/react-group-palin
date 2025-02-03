@@ -58,7 +58,7 @@ export const Footer = () => {
             </a>
           ))}
         </div>
-        <p className="mt-14 text-center text-sm/6 text-dracula-white/50">&copy; 2025 Palin & Martins. Todos os direitos reservados.</p>
+        <p className="mt-20 text-center text-sm/6 text-dracula-white/50">&copy; 2025 Palin & Martins. Todos os direitos reservados.</p>
       </div>
     </footer>
   )

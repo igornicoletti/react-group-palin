@@ -45,7 +45,7 @@ export const HeaderNav = () => {
             <List aria-hidden="true" className="size-6 text-dracula-main" weight="duotone" />
           </button>
         </div>
-        <div className="hidden lg:flex items-center gap-x-8 -mb-1">
+        <div className="hidden lg:flex items-center gap-x-16 -mb-1">
           <a href="#" className="text-sm/6 font-semibold text-dracula-main">
             Trabalhe conosco
           </a>
