@@ -1,25 +1,17 @@
-const careersData = {
-  section: "Junte-se à nossa equipe!",
-  title: "Trabalhe em coisas que você orgulhosamente ",
-  highlight: "conta a seus pais.",
-  subtitle: [
-    "Nós amamos pessoas inteligentes e empáticas que são brilhantes no que fazem. Pessoas proativas e orientadas por soluções que querem mergulhar de cabeça nas grandes ideias (e descobrir os detalhes ao longo do caminho).",
-    " Pessoas com sonhos para além das suas carreiras, que querem equilíbrio e liberdade na sua vida—não todo o trabalho, o tempo todo.",
-  ]
-}
+import { careersData } from '../datas'
 
 export const OurCareers = () => {
   return (
     <section className="relative overflow-hidden py-24 sm:py-32 mx-auto max-w-7xl px-6 lg:px-8">
       <div className="grid lg:grid-cols-2 gap-24 items-center">
-        <div className="max-w-xl text-center sm:text-left mx-auto">
+        <div className="max-w-4xl">
           <p className="font-semibold text-dracula-main">{careersData.section}</p>
-          <h1 className="mt-2 text-4xl/tight font-semibold tracking-tight text-pretty text-dracula-dark">{careersData.title}{' '}
-            <span className="text-transparent bg-gradient-to-r from-dracula-main/75 to-dracula-main bg-clip-text">{careersData.highlight}</span>
+          <h1 className="mt-2 text-4xl/tight font-semibold tracking-tight text-pretty text-dracula-dark">
+            {careersData.title}
           </h1>
-          <div className="mt-6 space-y-2">
+          <div className="mt-6 space-y-2 max-w-3xl text-xl/8 text-balance font-extralight text-dracula-dark">
             {careersData.subtitle.map((item, index) => (
-              <p className={`mt-2 text-lg/7 text-balance text-dracula-dark/75 ${index % 2 !== 0 ? 'font-semibold' : ''}`} key={index}>{item}</p>
+              <p key={index}>{item}</p>
             ))}
           </div>
         </div>

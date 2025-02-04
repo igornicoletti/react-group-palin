@@ -8,7 +8,7 @@ export const cultureData = {
   principles: [
     {
       name: 'Fundamentos',
-      description: 'Empresa cristã, que tem como fundamento os princípios bíblicos, utilizando os conteúdos cristãos para direcionar os trabalhos e conduzir nas adversidades; alinhando os comportamentos condizentes com o perfil líder/colaborador Palin.'
+      description: 'Empresa cristã, que tem como fundamento os princípios bíblicos, utilizando os conteúdos cristãos para direcionar os trabalhos e conduzir nas adversidades.'
     },
     {
       name: 'Valores Inegociáveis',

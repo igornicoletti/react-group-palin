@@ -1,7 +1,9 @@
 export const aboutData = {
   section: 'Construída sobre confiança.',
   title: 'Fortalecer e impulsionar o crescimento de nossos clientes e suas empresas.',
-  subtitle: ' Nosso compromisso é entender as necessidades únicas de cada cliente, oferecendo soluções personalizadas e eficazes que impulsionam o crescimento dos negócios e asseguram sua total satisfação.',
+  subtitle: [
+    ' Nosso compromisso é entender as necessidades únicas de cada cliente, oferecendo soluções personalizadas e eficazes que impulsionam o crescimento dos negócios e asseguram sua total satisfação.',
+  ],
   missionTitle: 'Confiança, comprometimento e profissionalismo.',
   missionParagraphs: [
     'Com mais de 20 anos de experiência, a Palin & Martins se destaca como uma consultoria tributária referência, com sede em São José do Rio Preto, São Paulo.',

@@ -1,4 +1,6 @@
 export { aboutData } from './about'
+export { careersData } from './careers'
 export { contactData } from './contact'
 export { cultureData } from './culture'
+export { footerData } from './footer'
 export { partnersData } from './partners'
