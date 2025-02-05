@@ -11,6 +11,5 @@ export const App = () => {
       <ContactUs />
       <Footer />
     </div>
-
   )
 }
