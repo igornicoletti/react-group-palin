@@ -1,6 +1,7 @@
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { List, X } from '@phosphor-icons/react'
 import { useState } from 'react'
+import { headerVariants } from '../styles'
 
 const navigation = [
   { name: 'Empresa', href: '#' },
@@ -8,88 +9,61 @@ const navigation = [
 ]
 
 export const HeaderNav = () => {
+  const headerStyle = headerVariants()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="relative">
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-        <div className="flex items-center gap-x-16">
+    <header className={headerStyle.header()}>
+      <nav aria-label="Global" className={headerStyle.nav()}>
+        <div className={headerStyle.logoContainer()}>
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Grupo Palin & Martins</span>
-            <img src="/images/palin-martins-black.png" alt="Logo" className="h-14 w-auto" />
+            <img src="/images/palin-martins-black.png" alt="Logo" className={headerStyle.logo()} />
           </a>
-          <div className="hidden lg:flex gap-x-16 -mb-1">
+          <div className={headerStyle.navLinks()}>
             {navigation.map(({ name, href }) => (
-              <a
-                key={name}
-                href={href}
-                className="text-sm/6 font-medium text-dracula-dark/75 hover:text-dracula-dark"
-              >
+              <a key={name} href={href} className={headerStyle.navLink()}>
                 {name}
               </a>
             ))}
           </div>
         </div>
         <div className="flex lg:hidden">
-          <button type="button" onClick={() => setMobileMenuOpen(true)} className="-m-2.5 p-2.5">
+          <button type="button" onClick={() => setMobileMenuOpen(true)} className={headerStyle.mobileButton()}>
             <span className="sr-only">Open main menu</span>
-            <List aria-hidden className="size-6 text-dracula-main" weight="duotone" />
+            <List aria-hidden className={headerStyle.mobileIcon()} weight="duotone" />
           </button>
         </div>
-        <div className="hidden lg:flex items-center gap-x-4 -mb-1">
-          <a
-            href="#"
-            className="px-4 py-1.5 text-sm/6 font-semibold border border-dracula-main text-dracula-main rounded-lg"
-          >
-            Trabalhe conosco
-          </a>
-          <a
-            href="#"
-            className="px-4 py-1.5 text-sm/6 font-semibold border border-dracula-main text-dracula-white bg-dracula-main rounded-lg"
-          >
-            Entre em contato
-          </a>
+        <div className={headerStyle.ctaContainer()}>
+          <a href="#" className={headerStyle.ctaOutlined()}>Trabalhe conosco</a>
+          <a href="#" className={headerStyle.ctaFilled()}>Entre em contato</a>
         </div>
       </nav>
-      <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+      <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className={headerStyle.dialog()}>
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-dracula-white p-6 sm:max-w-sm sm:ring-1 sm:ring-dracula-dark/10">
-          <div className="flex items-center justify-between">
+        <DialogPanel className={headerStyle.dialogPanel()}>
+          <div className={headerStyle.dialogHeader()}>
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Grupo Palin & Martins</span>
-              <img src="/images/palin-martins-black.png" alt="Logo" className="h-14 w-auto" />
+              <img src="/images/palin-martins-black.png" alt="Logo" className={headerStyle.logo()} />
             </a>
-            <button type="button" onClick={() => setMobileMenuOpen(false)} className="-m-2.5 p-2.5">
+            <button type="button" onClick={() => setMobileMenuOpen(false)} className={headerStyle.mobileButton()}>
               <span className="sr-only">Close menu</span>
-              <X aria-hidden className="size-6 text-dracula-main" weight="duotone" />
+              <X aria-hidden className={headerStyle.mobileIcon()} weight="duotone" />
             </button>
           </div>
-          <div className="mt-6 flow-root">
-            <div className="divide-y divide-dracula-dark/10">
-              <div className="py-6">
+          <div className={headerStyle.menuLinksContainer()}>
+            <div className={headerStyle.menuLinksWrapper()}>
+              <div className={headerStyle.menuLinks()}>
                 {navigation.map(({ name, href }) => (
-                  <a
-                    key={name}
-                    href={href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-sm/6 font-medium text-dracula-dark hover:bg-dracula-dark/5"
-                  >
+                  <a key={name} href={href} className={headerStyle.menuLink()}>
                     {name}
                   </a>
                 ))}
               </div>
-              <div className="flex flex-col gap-x-6 py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-sm/6 font-semibold text-dracula-dark hover:bg-dracula-dark/5"
-                >
-                  Trabalhe conosco
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-sm/6 font-semibold text-dracula-main hover:bg-dracula-dark/5"
-                >
-                  Entre em contato
-                </a>
+              <div className={headerStyle.menuCtaContainer()}>
+                <a href="#" className={headerStyle.menuCtaOutlined()}>Trabalhe conosco</a>
+                <a href="#" className={headerStyle.menuCtaFilled()}>Entre em contato</a>
               </div>
             </div>
           </div>

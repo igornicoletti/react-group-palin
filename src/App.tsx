@@ -4,8 +4,8 @@ export const App = () => {
   return (
     <div className='min-h-screen bg-dracula-white'>
       <HeaderNav />
-      <OurPartners />
       <AboutUs />
+      <OurPartners />
       <OurCulture />
       <OurCareers />
       <ContactUs />

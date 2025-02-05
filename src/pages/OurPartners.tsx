@@ -1,13 +1,16 @@
 import { partnersData } from '../datas'
+import { partnersVariants } from '../styles'
 
 export const OurPartners = () => {
+  const partnersStyle = partnersVariants()
+
   return (
-    <div className="py-24 mx-auto max-w-full px-6 lg:px-8 bg-dracula-main/5">
-      <div className="overflow-hidden relative">
-        <ul className="flex animate-marquee space-x-48">
+    <div className={partnersStyle.section()}>
+      <div className={partnersStyle.container()}>
+        <ul className={partnersStyle.list()}>
           {partnersData.concat(partnersData).map((partner, index) => (
-            <li key={index} className="flex-shrink-0">
-              <img className="max-h-14 w-full object-contain" src={partner.src} alt={partner.alt} loading="lazy" />
+            <li key={index} className={partnersStyle.listItem()}>
+              <img className={partnersStyle.image()} src={partner.src} alt={partner.alt} loading="lazy" />
             </li>
           ))}
         </ul>

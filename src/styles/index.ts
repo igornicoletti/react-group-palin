@@ -1,0 +1,8 @@
+export { aboutVariants } from './about'
+export { careersVariants } from './careers'
+export { contactVariants } from './contact'
+export { cultureVariants } from './culture'
+export { footerVariants } from './footer'
+export { headerVariants } from './header'
+export { partnersVariants } from './partners'
+export { principlesVariants } from './principles'
