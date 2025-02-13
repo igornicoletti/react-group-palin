@@ -18,15 +18,8 @@ export const HeaderNav = () => {
         <div className={headerStyle.logoContainer()}>
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Grupo Palin & Martins</span>
-            <img src="/images/palin-martins-black.png" alt="Logo" className={headerStyle.logo()} />
+            <img src="/images/palin-martins-white.png" alt="Logo" className={headerStyle.logo()} />
           </a>
-          <div className={headerStyle.navLinks()}>
-            {navigation.map(({ name, href }) => (
-              <a key={name} href={href} className={headerStyle.navLink()}>
-                {name}
-              </a>
-            ))}
-          </div>
         </div>
         <div className="flex lg:hidden">
           <button type="button" onClick={() => setMobileMenuOpen(true)} className={headerStyle.mobileButton()}>
@@ -35,6 +28,11 @@ export const HeaderNav = () => {
           </button>
         </div>
         <div className={headerStyle.ctaContainer()}>
+          {navigation.map(({ name, href }) => (
+            <a key={name} href={href} className={headerStyle.navLink()}>
+              {name}
+            </a>
+          ))}
           <a href="#" className={headerStyle.ctaOutlined()}>Trabalhe conosco</a>
           <a href="#" className={headerStyle.ctaFilled()}>Entre em contato</a>
         </div>
