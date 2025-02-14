@@ -1,58 +1,34 @@
 export const partnersData = [
   {
-    src: '/images/14.svg',
+    src: '/images/Essere.png',
     alt: 'Logo parceiros'
   },
   {
-    src: '/images/13.svg',
+    src: '/images/loyder.png',
     alt: 'Logo parceiros'
   },
   {
-    src: '/images/12.svg',
+    src: '/images/Essere.png',
     alt: 'Logo parceiros'
   },
   {
-    src: '/images/11.svg',
+    src: '/images/loyder.png',
     alt: 'Logo parceiros'
   },
   {
-    src: '/images/10.svg',
+    src: '/images/Essere.png',
     alt: 'Logo parceiros'
   },
   {
-    src: '/images/9.svg',
+    src: '/images/loyder.png',
     alt: 'Logo parceiros'
   },
   {
-    src: '/images/8.svg',
+    src: '/images/Essere.png',
     alt: 'Logo parceiros'
   },
   {
-    src: '/images/7.svg',
-    alt: 'Logo parceiros'
-  },
-  {
-    src: '/images/6.svg',
-    alt: 'Logo parceiros'
-  },
-  {
-    src: '/images/5.svg',
-    alt: 'Logo parceiros'
-  },
-  {
-    src: '/images/4.svg',
-    alt: 'Logo parceiros'
-  },
-  {
-    src: '/images/3.svg',
-    alt: 'Logo parceiros'
-  },
-  {
-    src: '/images/2.svg',
-    alt: 'Logo parceiros'
-  },
-  {
-    src: '/images/1.svg',
+    src: '/images/loyder.png',
     alt: 'Logo parceiros'
   },
 ]
