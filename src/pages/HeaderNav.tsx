@@ -33,8 +33,8 @@ export const HeaderNav = () => {
               {name}
             </a>
           ))}
-          <a href="#" className={headerStyle.ctaOutlined()}>Trabalhe conosco</a>
-          <a href="#" className={headerStyle.ctaFilled()}>Entre em contato</a>
+          <a href="#" className={headerStyle.ctaOutlined()}>Carreiras</a>
+          <a href="#" className={headerStyle.ctaFilled()}>Contate-nos</a>
         </div>
       </nav>
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className={headerStyle.dialog()}>
@@ -43,7 +43,7 @@ export const HeaderNav = () => {
           <div className={headerStyle.dialogHeader()}>
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Grupo Palin & Martins</span>
-              <img src="/images/palin-martins-black.png" alt="Logo" className={headerStyle.logo()} />
+              <img src="/images/palin-martins-white.png" alt="Logo" className={headerStyle.dialogLogo()} />
             </a>
             <button type="button" onClick={() => setMobileMenuOpen(false)} className={headerStyle.mobileButton()}>
               <span className="sr-only">Close menu</span>

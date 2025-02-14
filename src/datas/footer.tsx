@@ -34,5 +34,5 @@ export const footerData = {
       icon: (props: IconProps) => <WhatsappLogo {...props} />
     },
   ],
-  copy: '2025 Palin & Martins. Todos os direitos reservados.'
+  copy: '2025 Grupo Palin & Martins.'
 }

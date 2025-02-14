@@ -7,6 +7,32 @@ export const Footer = () => {
   return (
     <footer className={footerStyle.footer()}>
       <div className={footerStyle.container()}>
+        <div className={footerStyle.wrapper()}>
+          <p className={footerStyle.copyright()}>&copy; {footerData.copy}</p>
+          <div className={footerStyle.socialContainer()}>
+            {footerData.social.map((item) => (
+              <a key={item.name} href={item.href} target='_blank'>
+                <span className="sr-only">{item.name}</span>
+                <item.icon aria-hidden="true" weight="duotone" className={footerStyle.socialIcon()} />
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </footer>
+  )
+}
+
+
+/* import { footerData } from '../datas'
+import { footerVariants } from '../styles'
+
+export const Footer = () => {
+  const footerStyle = footerVariants()
+
+  return (
+    <footer className={footerStyle.footer()}>
+      <div className={footerStyle.container()}>
         <img alt="" src="/images/palin-martins-white.png" className={footerStyle.logo()} />
         <nav aria-label="Footer" className={footerStyle.nav()}>
           {footerData.main.map((item) => (
@@ -28,3 +54,4 @@ export const Footer = () => {
     </footer>
   )
 }
+ */

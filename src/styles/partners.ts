@@ -6,6 +6,6 @@ export const partnersVariants = tv({
     container: "overflow-hidden relative",
     list: "flex animate-marquee space-x-48",
     listItem: "flex-shrink-0",
-    image: "max-h-14 w-full object-contain"
+    image: "h-24 w-full object-contain"
   }
 })
